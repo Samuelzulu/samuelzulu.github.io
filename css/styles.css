@@ -88,7 +88,7 @@ a {
 }
 
 .hero-text {
-    max-width: 680px;
+    max-width: 640px;
 }
 
 .hero-subtitle {
@@ -142,6 +142,18 @@ a {
     border-color: var(--muted);
 }
 
+/* ==== Section spacing ==== */
+section {
+    padding: 72px 0;
+}
+
+.section-intro {
+    color: var(--muted);
+    margin-top: 0.5rem;
+    margin-bottom: 1.75rem;
+    max-width: 60ch;
+}
+
 /* ==== Responsive ==== */
 @media (max-width: 768px) {
     .nav-links {
@@ -155,4 +167,99 @@ a {
     .hero h1 {
         font-size: 2.2rem;
     }
+}
+
+/* ==== Projects ==== */
+.projects h2 {
+    font-size: 2rem;
+    letter-spacing: -0.3px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+}
+
+.project-card {
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 1.25rem;
+    background: #fff;
+    transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+.project-card:hover {
+    transform: translate(-3px);
+    border-color: #cbd5e1;
+}
+
+.project-card h3 {
+    font-size: 1.15rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-desc {
+    color: var(--muted);
+    margin-bottom: 1rem;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.project-tags span {
+    font-size: 0.85rem;
+    padding: 0.3rem o.55rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    color: var(--muted);
+}
+
+.project-links {
+    display: flex;
+    gap: 0.9rem;
+}
+
+.links {
+    color: var(--text);
+    font-weight: 600;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+/* ==== Projects responsive ==== */
+@media (max-width: 900px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.more-projects-title {
+    margin-top: 2.5rem;
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+}
+
+.more-projects {
+    list-style: none;
+    padding: 0;
+}
+
+.more-projects li {
+    color: var(--muted);
+}
+
+.more-projects a {
+    font-weight: 600;
+    color:var(--text);
+}
+
+.more-projects a:hover {
+    text-decoration: underline;
 }
