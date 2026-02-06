@@ -10,16 +10,33 @@
     <body>
         <header class="navbar">
             <!-- logo + nav links -->
-             <div calss="container">
-                <div class="logo">Samuel Zulu</div>
+             <div class="container">
 
-                <nav class="nav-links">
-                    <a href="#projects">Projects</a>
-                    <a href="#skills">Skills</a>
-                    <a href="#about">About</a>
-                    <a href="#contact">Contact</a>
-                    <a href="assets/Samuel_Zulu_Resume.pdf" class="resume-btn">Resume</a>
-                </nav>
+                <div class="logo">Samuel Zulu</div>
+                
+                <div class="nav-center">
+                    <nav class="nav-links" id="primary-nav">
+                        <a href="#projects">Projects</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#about">About</a>
+                        <a href="#contact">Contact</a>
+                        <a href="assets/Samuel_Zulu_Resume.pdf" class="resume-btn">Resume</a>
+                    </nav>
+                </div>
+
+                <!-- Mobile toggle -->
+                <button 
+                    class="nav-toggle" 
+                    aria-label="open menu" 
+                    aria-expanded="false" 
+                    aria-controls="primary-nav"
+                >
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+
+                
              </div>
         </header>
 
@@ -266,7 +283,7 @@
 
                             <button type="submit" class="btn primary">Send Message</button>
                         </from>
-                        
+
                      </div>
                 </div>
             </section>
@@ -275,6 +292,17 @@
 
         <footer class="footer">
             <!-- footer content -->
+
+            <div class="container footer-inner">
+                <p class="footer-text">© <span id="year"></span> Samuel Zulu • Montreal</p>
+
+                <div class="footer-links">
+                    <a href="#home">Back to top</a>
+                    <a href="https://github.com/Samuelzulu" target="_blank" rel="noopener noreferre">GitHub</a>
+                    <a href="https://www.linkedin.com/in/samuel-zulu-51141b249/" target="_blank" rel="noopener noreferre">LinkedIn</a>
+                    <a href="mailto:zulusamuel2004@gmail.com">Email</a>
+                </div>
+            </div>
         </footer>
     </body>
 </html>
