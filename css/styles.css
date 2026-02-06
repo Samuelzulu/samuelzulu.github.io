@@ -268,16 +268,18 @@ section {
 }
 
 .project-card {
-    border: 1px solid var(--border);
-    border-radius: 14px;
-    padding: 1.25rem;
-    background: #fff;
-    transition: transform 0.15s ease, border-color 0.15s ease;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1.25rem;
+  background: #fff;
+  transition: transform 0.18s ease, border-color 0.18s ease;
+  cursor: pointer;
 }
 
 .project-card:hover {
     transform: translateY(-3px);
     border-color: #cbd5e1;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
 }
 
 .project-card h3 {
@@ -299,7 +301,7 @@ section {
 
 .project-tags span {
     font-size: 0.85rem;
-    padding: 0.3rem o.55rem;
+    padding: 0.3rem 0.55rem;
     border: 1px solid var(--border);
     border-radius: 999px;
     color: var(--muted);
@@ -310,7 +312,7 @@ section {
     gap: 0.9rem;
 }
 
-.links {
+.link {
     color: var(--text);
     font-weight: 600;
 }
@@ -318,6 +320,17 @@ section {
 .link:hover {
     text-decoration: underline;
 }
+
+.project-links .link {
+  padding: 0.15rem 0.25rem;
+  border-radius: 8px;
+}
+
+.project-links .link:hover {
+  background: rgba(15, 23, 42, 0.06);
+  text-decoration: none;
+}
+
 
 /* ==== Projects responsive ==== */
 @media (max-width: 900px) {
@@ -540,4 +553,13 @@ section {
 
 .reveal[data-delay] {
   transition-delay: var(--delay);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal {
+    transition: none;
+    transform: none;
+    opacity: 1;
+  }
 }
