@@ -1,4 +1,4 @@
-# Samuel Zulu — Portfolio Website
+# Samuel Zulu — Portfolio Website - https://samuelzulu.github.io
 
 This is my personal portfolio website where I showcase my projects, skills, and ongoing work as a Computer Science student at Concordia University.
 
@@ -64,7 +64,6 @@ This portfolio serves two main purposes:
 ## 📫 Contact
 - GitHub: https://github.com/Samuelzulu
 - LinkedIn: www.linkedin.com/in/samuel-zulu-51141b249
-- Email: zulusamuel2004@gmail.com
 
 ---
 
