@@ -64,7 +64,6 @@ This portfolio serves two main purposes:
 ## 📫 Contact
 - GitHub: https://github.com/Samuelzulu
 - LinkedIn: www.linkedin.com/in/samuel-zulu-51141b249
-- Email: zulusamuel2004@gmail.com
 
 ---
 
