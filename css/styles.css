@@ -563,3 +563,109 @@ section {
     opacity: 1;
   }
 }
+
+/* ── About Page ─────────────────────────────── */
+.about-bio {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    max-width: 700px;
+    color: var(--text-secondary);
+}
+
+.education-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.5rem 2rem;
+    max-width: 600px;
+}
+
+.edu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.4rem;
+}
+
+.edu-header h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.edu-year {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.edu-degree {
+    font-weight: 500;
+    color: var(--accent);
+    margin-bottom: 0.25rem;
+}
+
+.edu-detail {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+/* Skills grid (about page) */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.skill-tag {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 0.5rem 1.1rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-primary);
+    transition: border-color 0.2s;
+}
+
+.skill-tag:hover {
+    border-color: var(--accent);
+}
+
+/* Hobbies grid */
+.hobbies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1.25rem;
+}
+
+.hobby-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.25rem;
+    text-align: center;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.hobby-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent);
+}
+
+.hobby-icon {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.hobby-card h4 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+}
+
+.hobby-card p {
+    font-size: 0.82rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
