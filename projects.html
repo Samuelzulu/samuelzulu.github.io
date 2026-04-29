@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Samuel Zulu | Projects</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+
+    <body>
+        <header class="navbar">
+            <div class="container">
+                <div class="logo">Samuel Zulu</div>
+                <div class="nav-center">
+                    <nav class="nav-links" id="primary-nav">
+                        <a href="projects.html" class="active">Projects</a>
+                        <a href="index.html#skills">Skills</a>
+                        <a href="about.html">About</a>
+                        <a href="index.html#contact">Contact</a>
+                        <a href="assets/Samuel_Zulu_Resume.pdf" class="resume-btn">Resume</a>
+                    </nav>
+                </div>
+                <button
+                    class="nav-toggle"
+                    aria-label="open menu"
+                    aria-expanded="false"
+                    aria-controls="primary-nav"
+                >
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </header>
+
+        <main>
+
+            <section class="section" id="projects">
+                <div class="container">
+                    <h1 class="section-title reveal">Projects</h1>
+                    <p class="projects-intro reveal">A collection of things I've built — from hackathon games to backend systems to personal tools.</p>
+
+                    <!-- Main Projects -->
+                    <div class="project-list">
+
+                        <article class="project-list-card reveal">
+                            <div class="project-list-header">
+                                <h2>STM Crash Game</h2>
+                                <div class="project-tags">
+                                    <span>Unity</span>
+                                    <span>C#</span>
+                                </div>
+                            </div>
+                            <p class="project-list-desc">
+                                A Unity-based 2D game built for a hackathon. I designed and implemented the core gameplay loop,
+                                collision system, and interactive elements under a tight time constraint. This was my first
+                                experience shipping a playable game end-to-end — and a crash course (pun intended) in rapid prototyping.
+                            </p>
+                            <div class="project-list-links">
+                                <a href="https://github.com/Samuelzulu/stm-crash-game" class="btn primary" target="_blank">GitHub</a>
+                            </div>
+                        </article>
+
+                        <article class="project-list-card reveal">
+                            <div class="project-list-header">
+                                <h2>TakShop</h2>
+                                <div class="project-tags">
+                                    <span>Python</span>
+                                    <span>SQL</span>
+                                    <span>APIs</span>
+                                </div>
+                            </div>
+                            <p class="project-list-desc">
+                                A student marketplace platform built with a focus on backend engineering. I designed the
+                                database schema, implemented authentication, and built out a REST API for listings and user
+                                management. The goal was to create a safe, simple way for students to buy and sell on campus.
+                            </p>
+                            <div class="project-list-links">
+                                <a href="https://github.com/Samuelzulu/TakShop" class="btn primary" target="_blank">GitHub</a>
+                            </div>
+                        </article>
+
+                        <article class="project-list-card reveal">
+                            <div class="project-list-header">
+                                <h2>Hybrid Student Well-Being Scheduler</h2>
+                                <div class="project-tags">
+                                    <span>Python</span>
+                                    <span>Pydantic</span>
+                                    <span>Pytest</span>
+                                </div>
+                            </div>
+                            <p class="project-list-desc">
+                                A scheduling engine that generates a balanced weekly plan by blending academics, wellness habits,
+                                and personal goals. I used Pydantic for data validation and Pytest for a full test suite.
+                                Built this because I wanted a smarter way to plan my own week — and it actually works.
+                            </p>
+                            <div class="project-list-links">
+                                <a href="https://github.com/Samuelzulu/wellbeing-scheduler" class="btn primary" target="_blank">GitHub</a>
+                            </div>
+                        </article>
+
+                    </div>
+
+                    <!-- More Projects -->
+                    <h2 class="more-projects-title reveal">More Projects</h2>
+                    <ul class="more-projects reveal">
+                        <li>
+                            <span class="more-project-name">Fridge Food Tracker</span>
+                            <span class="more-project-meta">Concept / team project — planning stage</span>
+                        </li>
+                        <li>
+                            <span class="more-project-name">Portfolio Website</span>
+                            <span class="more-project-meta">This site — built from scratch with HTML, CSS & JavaScript</span>
+                        </li>
+                    </ul>
+
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2025 Samuel Zulu. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>

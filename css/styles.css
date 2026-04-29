@@ -669,3 +669,66 @@ section {
     line-height: 1.5;
 }
 
+/* ── Projects Page ───────────────────────────── */
+.projects-intro {
+    font-size: 1.05rem;
+    color: var(--text-secondary);
+    margin-bottom: 2.5rem;
+    max-width: 620px;
+}
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.project-list-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 2rem;
+    transition: border-color 0.2s, transform 0.2s;
+}
+
+.project-list-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-3px);
+}
+
+.project-list-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.project-list-header h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.project-list-desc {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    line-height: 1.75;
+    margin-bottom: 1.25rem;
+}
+
+.project-list-links {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.more-project-name {
+    font-weight: 500;
+    margin-right: 0.5rem;
+}
+
+.more-project-meta {
+    font-size: 0.88rem;
+    color: var(--text-secondary);
+}
