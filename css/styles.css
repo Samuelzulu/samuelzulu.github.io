@@ -792,3 +792,34 @@ section {
     font-weight: 600;
     margin-bottom: 1.5rem;
 }
+
+/* ── Hero Photo ───────────────────────────────── */
+.hero .container {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.hero-photo {
+    flex-shrink: 0;
+}
+
+.hero-photo img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--accent);
+}
+
+@media (max-width: 640px) {
+    .hero .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-photo img {
+        width: 150px;
+        height: 150px;
+    }
+}
