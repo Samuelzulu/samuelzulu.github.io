@@ -732,3 +732,63 @@ section {
     font-size: 0.88rem;
     color: var(--text-secondary);
 }
+
+/* ── Contact Page ────────────────────────────── */
+.contact-intro {
+    font-size: 1.05rem;
+    color: var(--text-secondary);
+    max-width: 600px;
+    line-height: 1.75;
+    margin-bottom: 2.5rem;
+}
+
+.contact-links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1.25rem;
+    margin-bottom: 3rem;
+}
+
+.contact-link-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.25rem 1.5rem;
+    text-decoration: none;
+    color: var(--text-primary);
+    transition: border-color 0.2s, transform 0.2s;
+}
+
+.contact-link-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-3px);
+}
+
+.contact-link-icon {
+    color: var(--accent);
+    flex-shrink: 0;
+}
+
+.contact-link-card h3 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+}
+
+.contact-link-card p {
+    font-size: 0.82rem;
+    color: var(--text-secondary);
+}
+
+.contact-form-wrapper {
+    max-width: 600px;
+}
+
+.contact-form-wrapper h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
