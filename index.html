@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset = "UTF-8">
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Samuel Zulu — Computer Science student at Concordia University. Building clean, practical software.">
         <title>Samuel Zulu | Portfolio</title>
@@ -13,33 +13,27 @@
 
     <body>
         <header class="navbar">
-            <!-- logo + nav links -->
-             <div class="container">
-
+            <div class="container">
                 <div class="logo">Samuel Zulu</div>
-
                 <div class="nav-center">
                     <nav class="nav-links" id="primary-nav">
-                        <a href="index.html">Home</a>
+                        <a href="index.html" class="active">Home</a>
                         <a href="projects.html">Projects</a>
                         <a href="about.html">About</a>
                         <a href="contact.html">Contact</a>
                         <a href="assets/Samuel_Zulu_Resume.pdf" class="resume-btn">Resume</a>
                     </nav>
                 </div>
-
-                <!-- Mobile toggle -->
-                <button 
-                    class="nav-toggle" 
-                    aria-label="open menu" 
-                    aria-expanded="false" 
+                <button
+                    class="nav-toggle"
+                    aria-label="open menu"
+                    aria-expanded="false"
                     aria-controls="primary-nav"
                 >
                     <span class="bar"></span>
                     <span class="bar"></span>
                     <span class="bar"></span>
                 </button>
-                <!-- Dark Mode button -->
                 <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
                     <svg id="icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
@@ -56,85 +50,67 @@
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
                     </svg>
                 </button>
-             </div>
+            </div>
         </header>
 
         <main>
 
+            <!-- Hero -->
             <section class="hero" id="home">
                 <div class="container">
-                    <!--hero content -->
-                    <div class="hero-photo">
+                    <div class="hero-photo reveal">
                         <img src="assets/images/profile.jpg" alt="Samuel Zulu">
                     </div>
                     <div class="hero-text reveal">
                         <p class="hero-subtitle">Computer Science @ Concordia University</p>
-                        <h1>
-                            I build clean, practical software<span class="dot">.</span>
-                        </h1>
+                        <h1>I build clean, practical software.</h1>
                         <p class="hero-description">
-                            I'm a computer science student focused on web development, systems, and building real projects through coursework and hackathons.
+                            CS student in Montreal focused on web development, systems, and shipping real projects through coursework and hackathons.
                         </p>
-
                         <div class="hero-actions">
-                            <a href="#projects" class="btn primary">View Projects</a>
-                            <a href="#contact" class="btn secondary">Contact</a>
+                            <a href="projects.html" class="btn primary">View Projects</a>
+                            <a href="contact.html" class="btn secondary">Get In Touch</a>
                         </div>
                     </div>
                 </div>
             </section>
 
+            <!-- Featured Projects -->
             <section class="projects" id="projects">
                 <div class="container">
-                    <!-- project cards grid-->
-                     <h2 class="reveal">Projects</h2>
-                     <p class="section-intro reveal">
-                        A selection of projects I've worked on recently.
-                     </p>
+                    <h2 class="section-title reveal">Featured Projects</h2>
+                    <p class="section-intro reveal">A few things I've built recently.</p>
 
-                     <div class="projects-grid">
+                    <div class="projects-grid">
 
-                        <!-- Project 1 -->
                         <article class="project-card reveal">
                             <h3>STM Crash Game</h3>
-                            <p class="project-desc">
-                                A Unity-based 2D game built for a hackathon, focusing on gameplay mechanics, collisions, and interactive elements.
-                            </p>
-
+                            <p class="project-desc">A Unity-based 2D game built for a hackathon, focusing on gameplay mechanics, collisions, and interactive elements.</p>
                             <div class="project-tags">
                                 <span>Unity</span>
                                 <span>C#</span>
                             </div>
-
                             <div class="project-links">
                                 <a href="https://github.com/Samuelzulu/stm-crash-game" class="link" target="_blank">GitHub</a>
                             </div>
                         </article>
 
-                        <!-- Project 2 -->
                         <article class="project-card reveal">
                             <h3>TakShop</h3>
-                            <p class="project-desc">
-                                A student marketplace platform with backend authentication, database modeling, and API design.
-                            </p>
-
+                            <p class="project-desc">A student marketplace platform with backend authentication, database modeling, and API design.</p>
                             <div class="project-tags">
                                 <span>Python</span>
                                 <span>SQL</span>
                                 <span>APIs</span>
                             </div>
-
                             <div class="project-links">
                                 <a href="https://github.com/Samuelzulu/TakShop" class="link" target="_blank">GitHub</a>
                             </div>
                         </article>
 
-                        <!-- Project 3 -->
                         <article class="project-card reveal">
                             <h3>Hybrid Student Well-Being Scheduler</h3>
-                            <p class="project-desc">
-                                A Python scheduling engine that builds a balanced weekly plan by combining academics, wellness habits, and personal goals.
-                            </p>
+                            <p class="project-desc">A Python scheduling engine that builds a balanced weekly plan combining academics, wellness habits, and personal goals.</p>
                             <div class="project-tags">
                                 <span>Python</span>
                                 <span>Pydantic</span>
@@ -145,185 +121,39 @@
                             </div>
                         </article>
 
-                     </div>
+                    </div>
 
-                     <!-- More Projects -->
-                      <h3 class="more-projects-title">More Projects</h3>
-                      <ul class="more-projects">
-                        <li>
-                            <a href="#">Fridge Food Tracker</a>
-                            <span>- concept / team project (planning stage)</span>
-                        </li>
-                      </ul>
-                </div>
-            </section>
-
-            <section class="about-skills" id="about">
-                <div class="container">
-                    <!-- skills + about -->
-                     <div class="about-skills-grid">
-
-                    <!-- Skills -->
-                     <div class="skills reveal" id="skills">
-                        <h2>Skills</h2>
-                        <p class="section-intro">
-                            Technologies and tools I use to build projects.
-                        </p>
-
-                        <div class="skills-group">
-                            <h3>Languages</h3>
-                            <div class="pill-row">
-                                <span class="pill">Python</span>
-                                <span class="pill">Java</span>
-                                <span class="pill">C</span>
-                                <span class="pill">C#</span>
-                                <span class="pill">JavaScript</span>
-                            </div>
-                        </div>
-
-                        <div class="skills-group">
-                            <h3>Web</h3>
-                            <div class="pill-row">
-                                <span class="pill">HTML</span>
-                                <span class="pill">CSS</span>
-                                <span class="pill">Responsive Design</span>
-                                <span class="pill">DOM</span>
-                            </div>
-                        </div>
-
-                        <div class="skills-group">
-                            <h3>Tools</h3>
-                            <div class="pill-row">
-                                <span class="pill">Git</span>
-                                <span class="pill">GitHub</span>
-                                <span class="pill">VS Code</span>
-                                <span class="pill">Unity</span>
-                            </div>
-                        </div>
-
-                        <div class="skills-group">
-                            <h3>Concepts</h3>
-                            <div class="pill-row">
-                                <span class="pill">OOP</span>
-                                <span class="pill">REST APIs</span>
-                                <span class="pill">Data Structures</span>
-                                <span class="pill">Operating Systems</span>
-                            </div>
-                        </div>
-                     </div>
-
-                     <!-- About -->
-                      <div class="about reveal">
-                        <h2>About</h2>
-                        <p class="section-intro">
-                            A bit more about who I am and what I'm focused on.
-                        </p>
-
-                        <p class="about-text">
-                            I'm Samuel Zulu, a Computer Science student at Concordia University.
-                            I enjoy building clean, practical software and learning by shipping projects through coursework, hackathons, and personal builds.
-                        </p>
-
-                        <div class="about-text">
-                            <div class="info-box">
-                                <h3>Now</h3>
-                                <ul>
-                                    <li>Building my portfolio site from scratch (HTML/CSS/JS)</li>
-                                    <li>Working through Comp 346 (Operating)</li>
-                                    <li>Developing projects like TakShop and scheduling engine</li>
-                                </ul>
-                            </div>
-
-                            <div class="info-box">
-                                <h3>Next</h3>
-                                <ul>
-                                    <li>Build more full-stack projects and deploy them</li>
-                                    <li>Improve UI/UX and frontend fundamentals</li>
-                                    <li>Apply for internships and keep shipping</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="about-links">
-                            <a href="assets/Samuel_Zulu_Resume.pdf" class="btn primary">Resume</a>
-                            <a href="#contact" class="btn secondary">Contact</a>
-                        </div>
-                      </div>
-
+                    <div class="view-all reveal">
+                        <a href="projects.html" class="btn secondary">View All Projects →</a>
                     </div>
                 </div>
             </section>
 
-            <section class="contact" id="contact">
+            <!-- CTA Strip -->
+            <section class="cta-strip" id="contact">
                 <div class="container">
-                    <!-- contact info / form -->
-                     <h2>Contact</h2>
-                     <p class="section-intro">
-                        Want to collaborate, ask a question, or just say hi?
-                     </p>
-
-                     <div class="contact-grid">
-
-                        <div class="contact-info reveal">
-                            <p>
-                                I'm always open to discussing new projects, ideas, or opportunities.
-                                The best way to reach me is via email or LinkedIn.
-                            </p>
-
-                            <ul class="contact-list">
-                                <li>
-                                    <strong>GitHub</strong>
-                                    <a href="https://github.com/Samuelzulu" target="_blank">github.com/Samuelzulu</a>
-                                </li>
-                                <li>
-                                    <strong>LinkedIn</strong>
-                                    <a href="https://www.linkedin.com/in/samuel-zulu-51141b249/" target="_blank">LinkedIn</a>
-                                </li>
-                                <li>
-                                    <strong>Email</strong>
-                                    <a href="mailto:204smz@gmail.com">204smz@gmail.com</a>
-                                </li>
-                            </ul>
+                    <div class="cta-inner reveal">
+                        <div>
+                            <h2>Want to work together?</h2>
+                            <p>I'm open to internships, collaborations, and interesting projects.</p>
                         </div>
-
-                        <form class="contact-form reveal" action="mailto:204smz@gmail.com" method="get" enctype="text/plain">
-                            <label>
-                                Name
-                                <input type="text" name="name" placeholder="Your name">
-                            </label>
-
-                            <label>
-                                Email
-                                <input type="email" name="email" placeholder="you@example.com">
-                            </label>
-
-                            <label>
-                                Message
-                                <textarea rows="4" name="body" placeholder="Your message..."></textarea>
-                            </label>
-
-                            <button type="submit" class="btn primary">Send Message</button>
-                        </form>
-
-                     </div>
+                        <a href="contact.html" class="btn primary">Let's Talk →</a>
+                    </div>
                 </div>
             </section>
 
         </main>
 
         <footer class="footer">
-            <!-- footer content -->
-
             <div class="container footer-inner">
                 <p class="footer-text">&copy; <span id="year"></span> Samuel Zulu • Montreal</p>
-
                 <div class="footer-links">
-                    <a href="#home">Back to top</a>
                     <a href="https://github.com/Samuelzulu" target="_blank" rel="noopener noreferrer">GitHub</a>
                     <a href="https://www.linkedin.com/in/samuel-zulu-51141b249/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                 </div>
             </div>
         </footer>
+
         <script src="js/main.js"></script>
     </body>
 </html>
